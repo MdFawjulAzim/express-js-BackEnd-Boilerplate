@@ -1,4 +1,4 @@
-import * as path from "node:path";
+
 
 export const MONGODB_CONNECTION="mongodb+srv://mrrabbil:mernx123@cluster0.rtpbcy6.mongodb.net/app_todo?retryWrites=true&w=majority";
 
@@ -21,6 +21,3 @@ export const REQUEST_LIMIT_NUMBER =3000;//per 15 Min 3000 Requests Allowed
 export const WEB_CACHE=false;
 export const PORT=5050;
 
-export function UPLOAD_FOLDER(fileName){
-    return path.resolve(process.cwd(), 'storage', fileName);
-}
