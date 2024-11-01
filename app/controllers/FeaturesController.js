@@ -24,3 +24,8 @@ export const Email = async (req,res)=>{
     let result =await EmailSend(EmailTo,EmailText,EmailSubject,EmailHTMLBody)
     res.json({emailStatus:result});
 }
+
+export const Profile =async (req,res)=>{
+    res.json({status:"ok"});
+}
+
