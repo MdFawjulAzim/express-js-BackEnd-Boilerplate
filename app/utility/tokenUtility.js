@@ -8,3 +8,11 @@ export const EncodeToken= (email,user_id)=>{
     return jwt.sign(PAYLOAD, key, EXPIRE);
 
 }
+
+export const DecodeToken = (token)=>{
+    try {
+        return jwt.verify(token,JWT_SECRET);
+    }catch (e) {
+        return null;
+    }
+}
