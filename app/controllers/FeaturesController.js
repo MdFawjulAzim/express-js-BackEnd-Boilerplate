@@ -29,3 +29,30 @@ export const Profile =async (req,res)=>{
     res.json({status:"ok"});
 }
 
+export const CreateCookies = async (req,res)=>{
+    let cookieOptions ={
+        expires: new Date(Date.now() + 3600*1000),
+        httpOnly: true,
+        sameSite:true,
+    }
+    let data ="md@gmail.com";
+    let cookieName = "Mern07"
+
+    res.cookie(cookieName,data,cookieOptions);
+
+    res.json({status:"ok"});
+}
+
+export const RemoveCookies = async (req,res)=>{
+    let cookieOptions ={
+        expires: new Date(Date.now() - 3600*1000),
+        httpOnly: true,
+        sameSite:true,
+    }
+    let data ="";
+    let cookieName = "Mern07"
+
+    res.cookie(cookieName,data,cookieOptions);
+
+    res.json({status:"ok"});
+}
