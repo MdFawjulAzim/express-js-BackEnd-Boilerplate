@@ -38,9 +38,11 @@ app.use(limit);
 app.set('etag',WEB_CACHE);
 
 //MongoDB Connection
-/*
-    You Need to connect mongoDB Here
-*/
+mongoose.connect(MONGODB_CONNECTION,{autoIndex:true}).then(()=>{
+    console.log("Connected to MongoDB");
+}).catch(err=>{
+    console.log("Error connecting to MongoDB");
+})
 
 
 //Set API Routes
