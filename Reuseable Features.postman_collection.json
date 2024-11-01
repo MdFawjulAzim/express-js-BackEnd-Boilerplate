@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "fee9a8b6-b076-4e31-a786-095dcfc96d6f",
+		"name": "Reuseable Features",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38179196"
+	},
+	"item": [
+		{
+			"name": "TokenEncode",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5050/api/feature1/TokenEncode",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"api",
+						"feature1",
+						"TokenEncode"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TokenDecode",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5050/api/feature2/TokenDecode",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"api",
+						"feature2",
+						"TokenDecode"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Email",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5050/api/feature3/Email",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"api",
+						"feature3",
+						"Email"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Middleware",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5050/api/feature3/Email",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"api",
+						"feature3",
+						"Email"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateCookies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5050/api/feature5/CreateCookies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"api",
+						"feature5",
+						"CreateCookies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RemoveCookies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5050/api/feature5/CreateCookies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"api",
+						"feature5",
+						"CreateCookies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FileUpload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5050/api/feature7/FileUpload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5050",
+					"path": [
+						"api",
+						"feature7",
+						"FileUpload"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
