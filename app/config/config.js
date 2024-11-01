@@ -5,10 +5,11 @@ export const MONGODB_CONNECTION="mongodb+srv://mrrabbil:mernx123@cluster0.rtpbcy
 export const JWT_SECRET = "5EC7CEFA1BE7C9354A639369A2AA8JS";
 export const JWT_EXPIRATION_TIME = 60*60*24*30;
 
-export const EMAIL_HOST = "";
-export const EMAIL_PORT = "";
-export const EMAIL_USER = "";
-export const EMAIL_PASSWORD = "";
+export const EMAIL_HOST = "sandbox.smtp.mailtrap.io";
+export const EMAIL_PORT = "2525";
+export const EMAIL_USER = "36c1cf0b7f496f";
+export const EMAIL_PASSWORD = "91480c498acc52";
+export const MAIL_ENCRYPTION=""; //as needed for the mailtrap
 
 export const Max_JSON_SIZE = "50mb";
 export const URL_ENCODER = true;
