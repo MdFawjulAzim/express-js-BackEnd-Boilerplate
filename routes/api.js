@@ -14,6 +14,9 @@ router.get("/feature4/Profile",authMiddleware,FeaturesController.Profile);
 router.get("/feature5/CreateCookies",FeaturesController.CreateCookies);
 router.get("/feature6/RemoveCookies",FeaturesController.RemoveCookies);
 
+router.post("/feature7/FileUpload",FeaturesController.FileUpload);
+
+
 
 
 export default router;

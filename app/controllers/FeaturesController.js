@@ -1,5 +1,6 @@
 import { DecodeToken, EncodeToken } from "../utility/tokenUtility.js"
 import EmailSend from "../utility/emailUtility.js";
+import * as path from "node:path";
 
 export const TokenEncode = async (req,res)=>{
    let result = EncodeToken("mdfawjulazim617@gmail.com",'123');
@@ -55,4 +56,24 @@ export const RemoveCookies = async (req,res)=>{
     res.cookie(cookieName,data,cookieOptions);
 
     res.json({status:"ok"});
+}
+
+export const FileUpload = async (req,res)=>{
+    //Catch the File
+    let MyVedio = req.files['myVedio'];
+    let myFileName = MyVedio.name;
+
+    //prepare file storage path 
+    let myFilePath = path.resolve(process.cwd(),'storage',myFileName);
+
+    //move the file catch before
+
+    MyVedio.mv(myFilePath,function(err){
+        if(err){
+            res.json({status:"not ok"})
+        }else{
+            res.json({status:"File uploaded successfully!"});
+        }
+    });
+
 }
