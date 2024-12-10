@@ -1,6 +1,8 @@
 
 
-export const MONGODB_CONNECTION="mongodb+srv://mrrabbil:mernx123@cluster0.rtpbcy6.mongodb.net/app_todo?retryWrites=true&w=majority";
+// export const MONGODB_CONNECTION="mongodb+srv://mrrabbil:mernx123@cluster0.rtpbcy6.mongodb.net/app_todo?retryWrites=true&w=majority";
+export const MONGODB_CONNECTION="mongodb+srv://mdfawjulazim:mdfawjulazim123@cluster.szrub.mongodb.net/";
+
 
 export const JWT_SECRET = "5EC7CEFA1BE7C9354A639369A2AA8JS";
 export const JWT_EXPIRATION_TIME = 60*60*24*30;
